@@ -1,6 +1,6 @@
-import '@config/env'
 import express, { Application } from 'express'
-
+import { config } from 'dotenv'
+config()
 const app: Application = express()
 
 const PORT: string = process.env.PORT || '4000'

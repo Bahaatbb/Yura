@@ -1,20 +1,22 @@
 {
-  "name": "scarlet",
+  "name": "yura",
   "version": "1.0.0",
   "description": "A Complete suit for software development",
   "main": "app.js",
-  "repository": "https://github.com/Bahaatbb/scarlet.git",
+  "repository": "https://github.com/Bahaatbb/yura.git",
   "author": "Bahaa Eddin Tabbakha <bahaatbb@gmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "nodemon development",
+    "copy_env_dev": "node ./setup.js development",
+    "copy_env_stage": "node ./setup.js staging",
+    "copy_env_prod": "node ./setup.js production",
+    "dev": "npm run copy_env_dev && nodemon --config config/nodemon.json",
     "lint": "eslint src/app.ts",
     "lint:fix": "eslint src/app.ts --fix",
-    "prettify": "prettier --config .prettierrc.json --write src/**/*.ts",
-    "build": "mkdir dist && tsc src/app.ts",
-    "start": "node dist/app.js",
-    "production": "pm2 start --name 'scarlet' node -- -r ./tsconfig-paths.js dist/app.js",
+    "prettify": "prettier --config .prettierrc.js --write src/**/*.ts",
+    "build": "tsc",
+    "production": "pm2 start --name 'Yura' node -- -r ./tsconfig-paths.js dist/app.js production",
     "test": "jest"
   },
   "devDependencies": {
@@ -30,7 +32,6 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.0.0",
-    "husky": "^7.0.4",
     "jest": "^27.5.1",
     "nodemon": "^2.0.15",
     "prettier": "^2.6.2",
@@ -47,7 +48,7 @@
     "morgan": "^1.10.0"
   },
   "bugs": {
-    "url": "https://github.com/Bahaatbb/scarlet/issues"
+    "url": "https://github.com/Bahaatbb/yura/issues"
   },
-  "homepage": "https://github.com/Bahaatbb/scarlet#readme"
+  "homepage": "https://github.com/Bahaatbb/yura#readme"
 }

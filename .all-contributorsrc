@@ -1,0 +1,27 @@
+{
+  "projectName": "takenote",
+  "projectOwner": "taniarascia",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 50,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "Bahaatbb",
+      "name": "Bahaa Eddin Tabbakha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60551967?v=4",
+      "profile": "https://github.com/Bahaatbb",
+      "contributions": [
+        "code",
+        "ideas",
+        "bug"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
+}

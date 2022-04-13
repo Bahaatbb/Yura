@@ -1,10 +1,9 @@
-
 // solution from : https://stackoverflow.com/questions/45194598/using-process-env-in-typescript
 /* eslint-disable no-unused-vars */
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
-      PORT?: string;
+      PORT?: string
     }
   }
 }
