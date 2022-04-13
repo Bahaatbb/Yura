@@ -1,7 +1,7 @@
 # Yura
-A Complete suit for software development
 
 <p align="center">
+    <p> A Complete suit for software development</p>
  <img src="https://img.shields.io/badge/License-MIT-blue.svg">
 </p>
 
