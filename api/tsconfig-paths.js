@@ -8,5 +8,8 @@ const tsConfig = require('./tsconfig.json')
 // https://github.com/microsoft/TypeScript/issues/10866
 tsConfigPaths.register({
     baseUrl: tsConfig.compilerOptions.baseUrl,
-    paths: tsConfig.compilerOptions.paths
+    paths: tsConfig.compilerOptions.paths,
+    types: tsConfig.compilerOptions.types,
+    files: tsConfig.files,
+    typeRoots: tsConfig.compilerOptions.typeRoots,    
 })
